@@ -1,0 +1,98 @@
+
+a:link{
+  text-decoration: none;
+}
+
+#my_name {
+  background-color: #eaeaed;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 15px;
+  font-size: 50px;
+  color: green;
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+#blur{
+  background: rgba(0,0,0,0.25);
+  height: 100%;
+}
+
+#header_1 {
+  width: 100%;
+  background: url(http://www.michiganreview.com/wp-content/uploads/2011/09/Michigan-stadium-night-game-52.jpg) center no-repeat;
+  padding: 0;
+  margin-top: 0;
+  height: 100vh;
+}
+
+.titles{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#top{ 
+  padding: 0;
+  height: 100vh;
+}
+
+#proj_button {
+  background-color: #eaeaed;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 100px;
+  font-size: 30px;
+  color: teal;
+}
+
+#educ_button {
+  background-color: #eaeaed;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 30px;
+  color: teal;
+  margin: 0 40px;
+}
+
+
+#hobbies_button {
+  background-color: #eaeaed;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 100px;
+  font-size: 30px;
+  color: teal;
+}
+
+#subtitle {
+  display: inline-block;
+  border-radius: 7px;
+  background-color: #eaeaed;
+  padding: 5px;
+  color: teal;
+  font-size: 24px;
+  margin-top: 100px;
+}
+
+.footer {
+  position:absolute;
+  right: 5px;
+  bottom: 5px;
+  color: white;
+}
+
+#fb {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  width:100%;
+}
