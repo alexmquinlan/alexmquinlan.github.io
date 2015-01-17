@@ -1,16 +1,11 @@
 
 a:link{
   text-decoration: none;
+  color: inherit;
 }
 
-#my_name {
-  background-color: #eaeaed;
-  display: inline-block;
-  border-radius: 7px;
-  padding: 15px;
-  font-size: 50px;
-  color: green;
-  margin-top: 10px;
+a:visited {
+  color: inherit;
 }
 
 body {
@@ -18,13 +13,13 @@ body {
 }
 
 #blur{
-  background: rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.05);
   height: 100%;
 }
 
 #header_1 {
   width: 100%;
-  background: url(http://www.michiganreview.com/wp-content/uploads/2011/09/Michigan-stadium-night-game-52.jpg) center no-repeat;
+  background: url("images/background.jpg") center no-repeat;
   padding: 0;
   margin-top: 0;
   height: 100vh;
@@ -42,45 +37,49 @@ body {
   height: 100vh;
 }
 
-#proj_button {
-  background-color: #eaeaed;
+#my_name {
+  font-family: 'Roboto Condensed', cursive;
   display: inline-block;
   border-radius: 7px;
-  padding: 10px;
-  margin-top: 100px;
-  font-size: 30px;
+  padding-top: 27px;
+  padding-bottom: 0px;
+  font-size: 88px;
   color: teal;
-}
-
-#educ_button {
-  background-color: #eaeaed;
-  display: inline-block;
-  border-radius: 7px;
-  padding: 10px;
-  font-size: 30px;
-  color: teal;
-  margin: 0 40px;
-}
-
-
-#hobbies_button {
-  background-color: #eaeaed;
-  display: inline-block;
-  border-radius: 7px;
-  padding: 10px;
-  margin-top: 100px;
-  font-size: 30px;
-  color: teal;
+  margin-top: 10px;
 }
 
 #subtitle {
+  font-family: 'Roboto Condensed', cursive;
+  display: inline-block;
+  padding: 5px;
+  color: #FFEB99;
+  font-size: 39px;
+  margin-top: 60px;
+}
+
+.buttons {
+  font-family: 'Roboto Condensed', cursive;
   display: inline-block;
   border-radius: 7px;
-  background-color: #eaeaed;
-  padding: 5px;
+  border: 2px solid;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: 80px;
   color: teal;
-  font-size: 24px;
-  margin-top: 100px;
+  font-color: teal;
+  text-decoration: none;
+}
+
+.buttons:hover {
+    background: rgba(0, 128, 128, 0.20);
+}
+
+#educ_button { 
+  margin-left:40px;
+}
+
+#about_button{
+  margin-right: 40px;
 }
 
 .footer {
@@ -90,9 +89,54 @@ body {
   color: white;
 }
 
-#fb {
+#icons {
   position: absolute;
   bottom: 5px;
   text-align: center;
-  width:100%;
+  width: 100%;
+}
+
+#topbar {
+  height: 150px;
+  width: 100%;
+  display: table;
+  background: url("images/background.jpg") center;
+}
+
+#about_body{
+  background: #FFFFC2;
+  height: 100vh;
+  width: 100%;
+}
+
+.bar_buttons {
+  width: 100px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 7px;
+  border: 2px solid;
+  font-size: 35px;
+  font-family: 'Roboto Condensed', cursive;
+  color: teal;
+}
+
+#name_logo{
+  display: block;
+  border-radius: 25px;
+  padding: 10px;
+  width: 100px;
+  margin-top: 35px;
+  margin-left: 40px;
+  color: teal;
+  background-color: #FFEB99;
+  font-size: 35px;
+  font-family: 'Roboto Condensed', cursive;
+}
+
+.bar_buttons:hover {
+  background: rgba(0, 128, 128, 0.20)
+}
+
+#aboutPg_about{
 }
