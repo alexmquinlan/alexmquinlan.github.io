@@ -109,15 +109,12 @@ body {
   background-color: #FFEB99;
   font-size: 50px;
   font-family: 'Kaushan Script';
-}
-
-#name_logo:hover{
-  font-size: 293%;
+ transform: translateZ(0);
+ backface-visibility: hidden; 
 }
 
 .bar_buttons:hover {
   background: rgba(0, 128, 128, 0.20);
-  font-size: 200%;
 }
 
 #aboutPg_about{ 
