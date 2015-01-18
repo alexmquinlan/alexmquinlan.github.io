@@ -100,6 +100,7 @@ body {
   height: 150px;
   width: 100%;
   display: table;
+  vertical-align: middle;
   background: url("images/background.jpg") center;
 }
 
@@ -110,8 +111,8 @@ body {
 }
 
 .bar_buttons {
-  width: 100px;
-  display: table-cell;
+  width: 150px;
+  display: block;
   vertical-align: middle;
   text-align: center;
   border-radius: 7px;
@@ -119,15 +120,19 @@ body {
   font-size: 35px;
   font-family: 'Roboto Condensed', cursive;
   color: teal;
+  position: absolute;
+  top: 50px;
 }
 
 #name_logo{
   display: block;
+  text-align: center;
   border-radius: 25px;
   padding: 10px;
   width: 100px;
   margin-top: 35px;
-  margin-left: 40px;
+  margin-left: 35px;
+  border: 2px solid;
   color: teal;
   background-color: #FFEB99;
   font-size: 35px;
@@ -138,5 +143,10 @@ body {
   background: rgba(0, 128, 128, 0.20)
 }
 
-#aboutPg_about{
+#aboutPg_about{ 
+  right:250px;
+}
+
+#aboutPg_hobbies {
+  right:50px;
 }
