@@ -86,11 +86,11 @@ body {
   width: 100%;
   display: table;
   vertical-align: middle;
-  background: url("images/background.jpg") center;
+  background: url("images/background.jpg") 10% 30%;
 }
 
 #about_body{
-  background: #FFFFC2;
+  background: #FFEB99;
   height: 100vh;
   width: 100%;
 }
