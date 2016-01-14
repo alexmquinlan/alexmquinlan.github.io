@@ -1,0 +1,102 @@
+
+a:link{
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+a:active{
+	color: inherit;
+}
+
+/* These are sizes for mobile */
+
+body {
+	background-color: #FDFDFF;
+	height: 1600px;
+	color: white;
+	font-family: 'Poiret One', cursive;
+}
+
+#header {
+	color: #C6C5B9;
+	height: 75px;
+	font-size: 45px;
+	width: 100%;
+	background-color: #546A7B;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+	position: fixed;
+	display: table;
+}
+
+#navbar {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#initials {
+	border: 1px solid;
+	width: 2em;
+	text-align: center;
+	cursor: default;
+}
+
+#contact-button {
+	margin-left: 15px;
+}
+
+#top {
+	height: 75px;
+}
+
+#landing-page {
+	text-align: center;
+	color: #393D3F;
+	height: 500px;
+	display: table;
+	background-color: #C6C5B9;
+	width: 100%;
+	font-size: 50px;
+}
+
+#landing-page-info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#picture {
+	height: 200px;
+	width: 200px;
+	border-radius: 45%;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+	margin-top: 20px;
+}
+
+#about-mark, #contact-mark {
+	height: 55px;
+}
+
+#about {
+	width: 100%;
+	height: 500px;
+	font-size: 50px;
+	background-color: #62929E;
+	color: #C6C5B9;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	#landing-page, #about {
+		font-size: 80px;
+	}
+	#picture {
+		height: 300px;
+		width: 300px;
+		margin-top: 0px;
+	}
+}
