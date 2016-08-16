@@ -1,4 +1,72 @@
+#body {
+	height: 100vh;
+}
 
+#mainContainer {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../images/tcRocks.jpg");
+	background-size: 130% 100%;
+	background-position: 50% 0;
+}
+
+#name {
+	font-size: 50px;
+}
+
+#mainShade {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	display: table;
+}
+
+#contentContainer {
+	height: 200px;
+	width:90%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#content {
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	color: white;
+}
+
+#links {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+}
+
+.hr {
+	background-color: white;
+	width: 85%;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+	#name {
+		font-size:75px;
+	}
+	#mainContainer {
+		background-size: 100% 100%;
+	}
+	#contentContainer {
+		width: 60%;
+	}
+	#links {
+		font-size: 40px;
+	}
+}
+
+
+
+
+/* Link Styling */
 a:link{
   text-decoration: none;
   color: inherit;
@@ -8,53 +76,8 @@ a:visited {
 }
 a:hover{
 	text-decoration: none;
-	color: inherit;
+	color: rgba(255,255,255,0.75);
 }
 a:active{
 	color: inherit;
-}
-
-/* These are sizes for mobile */
-
-body {
-	background-color: #949189;
-	color: #363537;
-	font-family: 'Poiret One';
-	width: 100%;
-}
-
-#main-content {
-	font-size: 30px;
-	margin: 100px 0 100px 0;
-}
-
-#main-container {
-	margin: 0 0 45px 0;
-}
-
-#aq-box {
-	width: 	200px;
-	height: 175px;
-}
-.text-links {
-	color: #c8c8c8;
-}
-.text-links:link, .text-links:visited {
-	color: #c8c8c8;
-}
-
-@media (min-width: 768px) {
-	#aq-box {
-		width: 	300px;
-		height: 275px;
-	}
-	.text-links {
-		color: inherit;
-	}
-	.text-links:link, .text-links:visited {
-		color: inherit;
-	}
-	.text-links:hover {
-		color: #c8c8c8;
-	}
 }
