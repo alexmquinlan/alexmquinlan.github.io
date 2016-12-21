@@ -1,11 +1,13 @@
 #body {
 	height: 100vh;
-	background-color: lightslategrey;
 }
+
+/* index.html */
 
 #mainContainer {
 	width: 100%;
 	height: 100vh;
+	background-color: lightslategrey;
 	background-image: url("../images/tcRocks.jpg");
 	background-size: 130% 100%;
 	background-position: 50% 0;
@@ -24,7 +26,7 @@
 
 #contentContainer {
 	height: 200px;
-	width:90%;
+	width: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -33,11 +35,19 @@
 	font-family: 'PT Sans', sans-serif;
 	text-align: center;
 	color: white;
+	width: 60%;
+	margin: 0 auto;
 }
 
 #links {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 25px;
+}
+
+.mainLink {
+	display: inline-block;
+	width: 150px;
+	margin: 0 auto;
 }
 
 .hr {
@@ -46,6 +56,24 @@
 	margin-top: 0;
 	margin-bottom: 10px;
 }
+
+/* fun.html */
+
+#navbar {
+	background-color: lightslategrey;
+	color: white;
+}
+
+#navBrand {
+	font-family: 'PT Sans', sans-serif;
+	color: white;
+}
+
+#funContent {
+	margin-top: 70px;
+	height: 1500px;
+}
+
 
 /* Media Queries */
 
@@ -56,11 +84,14 @@
 	#mainContainer {
 		background-size: 100% 100%;
 	}
-	#contentContainer {
-		width: 60%;
+	#content {
+		width: 90%;
 	}
 	#links {
 		font-size: 40px;
+	}
+	.mainLink {
+		margin: 0 35px 0 0;
 	}
 }
 
