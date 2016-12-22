@@ -1,8 +1,11 @@
 #body {
-	height: 100vh;
 }
 
 /* index.html */
+
+#allContent {
+	height: 2000px;
+}
 
 #mainContainer {
 	width: 100%;
@@ -15,6 +18,10 @@
 
 #name {
 	font-size: 50px;
+}
+#title {
+	margin: 10px 0;
+	font-family: 'PT Sans', sans-serif;
 }
 
 #mainShade {
@@ -57,11 +64,62 @@
 	margin-bottom: 10px;
 }
 
+#introContainer {
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	color: black;
+	display: table;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: black
+}
+
+#introTextContainer {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#introText {
+	margin-top: 0;
+}
+
+#topContainer {
+	position: fixed;
+	bottom: 20px;
+	right: 25px;
+	display: none;
+}
+#topText {
+	color: gray;
+}
+
 /* fun.html */
 
 #navbar {
 	background-color: lightslategrey;
+	color: white;	
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:51px;
+	z-index:9999;
+	display: none;
+}
+
+#navCollapse {
+	z-index:9999;
+	background-color: lightslategrey;
+}
+
+#navButton {
+	background-color: inherit;
 	color: white;
+	border: 0;
+}
+.icon-bar {
+	background-color: white!important;
 }
 
 #navBrand {
@@ -69,9 +127,47 @@
 	color: white;
 }
 
+.navbarLinks {
+	color: white;
+	font-family: 'Quicksand', sans-serif;	
+}
+
 #funContent {
-	margin-top: 70px;
+	margin-top: 50px;
+	padding-top: 15px;
 	height: 1500px;
+}
+
+#sideNav {
+	float:left;
+	width: 15%;
+}
+
+.sideNavLinkContainers {
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#funMain {
+	margin-left: 15%;
+	padding-left: 10%;
+	border-left: 1px solid;
+	border-left-color: black;
+}
+
+.funTitles {
+	margin-top: 0;
+}
+
+.photoContainer {
+}
+
+.funPictures {
+	display: inline-block;
+	height: 80px;
+	width: 150px;
+	margin: 10px 10px;
 }
 
 
@@ -96,20 +192,52 @@
 }
 
 
-
-
 /* Link Styling */
-a:link{
+.mainLink:link{
   text-decoration: none;
   color: inherit;
 }
-a:visited {
+.mainLink:visited {
   color: inherit;
 }
-a:hover{
+.mainLink:hover{
 	text-decoration: none;
 	color: rgba(255,255,255,0.75);
 }
-a:active{
+.mainLink:active{
+	color: inherit;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	font-size: 15px;
+}
+.navbarLinks:link{
+  text-decoration: none;
+  color: white;
+}
+.navbarLinks:visited {
+  color: white;
+}
+.navbarLinks:hover{
+	text-decoration: none;
+	color: rgba(255,255,255,0.75);
+}
+.navbarLinks:active{
+	color: white;
+}
+
+.sideNavLinks:link{
+  text-decoration: none;
+  color: inherit;
+}
+.sideNavLinks:visited {
+  color: inherit;
+}
+.sideNavLinks:hover{
+	text-decoration: none;
+	color: rgba(229,0,0,0.9);
+}
+.sideNavLinks:active{
 	color: inherit;
 }
