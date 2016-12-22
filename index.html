@@ -44,7 +44,7 @@
 								<a href="#" class="mainLink work">Work</a>
 								<a href="nofun.html" class="mainLink" >Fun</a>
 								<a href="mailto:alexquinlan1@gmail.com" class="mainLink" >Email</a>
-								<a href="assets/images/aqresume.pdf" class="mainLink" >Resume</a>
+								<a href="assets/images/aqresume.pdf" class="mainLink" id="resumeMainLink">Resume</a>
 							</div>
 						</div>
 					</div>
@@ -64,13 +64,16 @@
 		<script type="text/javascript">
 		    $(document).ready(function(){
 
+		    	var scrollLoc = $('#resumeMainLink').position().top;
+
 		    	$(window).resize(function() {
 				    $('#mainContainer').height($(window).height());
+				    scrollLoc = $('#resumeMainLink').position().top;
 				});	
 
 
 		        $(window).scroll(function(){
-		            if ($(this).scrollTop() > 500) {
+		            if ($(this).scrollTop() > scrollLoc) {
 		                $('#navbar, #topContainer').fadeIn(500);
 		                return false;
 		            } else {
