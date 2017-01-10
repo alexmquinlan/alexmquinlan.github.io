@@ -12,6 +12,7 @@
 	height: 100vh;
 	background-color: lightslategrey;
 	background-image: url("../images/tcRocks.jpg");
+	background-attachment: fixed;
 	background-size: 130% 100%;
 	background-position: 50% 0;
 }
