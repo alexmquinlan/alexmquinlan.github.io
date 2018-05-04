@@ -1,0 +1,139 @@
+@font-face { font-family: Big John; src: url('../fonts/BIG_JOHN.otf'); }
+@font-face { font-family: Slim Joe; src: url('../fonts/Slim_Joe.otf'); }
+@font-face { font-family: League Mono; src: url('../fonts/LeagueMono-Regular.otf'); }
+
+<<<<<<< HEAD
+html, body {
+	background-color: #f9f9f9;
+	color: black;
+	height: 100%;
+=======
+#allContent {
+	height: 2000px;
+>>>>>>> parent of 27eed45... update style.css
+}
+
+.big-john {	font-family: Big John; }
+.slim-joe {	font-family: Slim Joe; }
+.league-mono { font-family: League Mono; }
+.abril-fatface { font-family: 'Abril Fatface'; }
+.open-sans { font-family: 'Open Sans'; font-weight: 300;}
+.work-sans { font-family: 'Work Sans'; }
+
+
+.hidden-page {
+	height: 100%;
+	position: relative;
+	z-index:5;
+	color: white;
+}
+
+.hp-top { top:-101%; }
+.hp-left { left:-101%; }
+.hp-right { right:-101%; }
+.hp-bottom { bottom:-101%; }
+
+#cover-container {
+	max-width: 42rem;
+	position: absolute;
+	top:0; bottom:0;
+	left:0; right:0;
+}
+
+.main-link {
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+#wrk-link {	color: #39aa56; }
+#abt-link { color: #663096; }
+#fun-link { color: #ff5722; }
+#cot-link { color: #1565c0; }
+
+.display-3 {
+	font-size: 3.5rem;
+}
+.display-4 {
+	font-size: 2.5rem;
+}
+.title-close { cursor: pointer; }
+.content-width { max-width: 50rem; }
+.page-content-hgt {	min-height: 2rem; }
+
+.form-control {
+	background-color: unset;
+	color: white;
+	box-shadow: none;
+}
+.form-control::placeholder {
+	color: white;
+	opacity: 0.5;
+}
+.form-control:focus {
+	background-color: unset;
+	color: white;
+	box-shadow: none;
+}
+
+
+/* Responsive Font - Media Queries */
+  @media(min-width: 576px) {
+
+  .page-content-side { border-right: .5px solid white; border-bottom: 0; }
+  .page-content-hgt { min-height: 25rem; }
+
+} @media (min-width: 768px) {
+	.display-3 {
+		font-size: 5.5rem;
+	}
+	.display-4 {
+		font-size: 3.5rem;
+	}
+} @media (min-width: 992px) {
+
+
+
+} @media (min-width: 1200px) {
+
+
+
+}
+
+/*
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+.form-control:-moz-placeholder {
+    /* FF 4-18 
+    color: white;
+}
+.form-control::-moz-placeholder {
+    /* FF 19+ 
+    color: white;
+}
+.form-control:-ms-input-placeholder {
+    /* IE 10+ 
+    color: white;
+}*/
+
+.corner-ribbon{
+  width: 200px;
+  background: #e82;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
