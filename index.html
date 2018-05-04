@@ -6,94 +6,114 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="icon" type="image/png" href="assets/images/rock.png"/>
-		<link href="https://fonts.googleapis.com/css?family=Quicksand|PT+Sans|Ubuntu" rel="stylesheet">
-		<link href='assets/css/bootstrap.css' rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400|Work+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="assets/css/style.css" rel="stylesheet"/>
 	</head>
 
-	<body id="body">
-		<div id="allContent">
-			<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button id="navButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navCollapse" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a id="navBrand" class="navbar-brand" href="#">Alex Quinlan</a>
+	<body>
+			<div class="corner-ribbon top-left" style="font-size:0.75em;">Under Construction!</div>
+		<div class="h-100" style="overflow: hidden;">
+			<div class="d-flex mx-auto h-100 p-3 flex-column text-center" id="cover-container">
+				<header class="masthead mb-auto"></header>
+				<main class="">
+					<h1 class="display-3 mb-0 abril-fatface">Alex Quinlan</h1>
+					<h2 class="display-4 open-sans" style="color: #888;">Software Engineer</h2>
+					<div class="mt-2 row">
+						<!-- <div class="col-12 col-md-3 main-link" id="wrk-link" name="left">Work</div>
+						<div class="col-12 col-md-3 main-link" id="abt-link" name="top">About</div>
+						<div class="col-12 col-md-3 main-link" id="fun-link" name="right">Fun</div> -->
+						<div class="col-12 col-md-12 main-link" id="cot-link" name="bottom">Contact</div>
 					</div>
-					<div class="collapse navbar-collapse" id="navCollapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a class="navbarLinks work" href="#">Work</a></li>
-						<li><a class="navbarLinks" href="#">Fun</a></li>
-						<li><a class="navbarLinks" href="mailto:alexquinlan1@gmail.com">Email</a></li>
-						<li><a class="navbarLinks" href="assets/images/aqresume.pdf">Resume</a></li>
-					</ul>
-					</div><!-- /.navbar-collapse -->
-				</div>
-			</nav>
-			<div id="mainContainer">
-				<div class="container-fluid" id="mainShade">
-					<div id="contentContainer">
-						<div id="content">
-							<h1 id="name">Alex Quinlan</h1>
-							<hr class="hr">
-							<div id ="links">
-								<a href="http://alexquinlan.xyz/artschorale.github.io" class="mainLink work">Work</a>
-								<!--<a href="nofun.html" class="mainLink" >Fun</a>-->
-								<a href="mailto:alexquinlan1@gmail.com" class="mainLink" >Email</a>
-								<a href="assets/images/aqresume.pdf" class="mainLink" id="resumeMainLink">Resume</a>
+				</main>
+				<footer class="mastfoot mt-auto"></footer>
+			</div>
+			<div class="hidden-page hp-top">
+				<div class="container h-100">
+					<div class="pt-4 pb-5 row">
+						<div class="col-6 text-left">
+							<h4 class="abril-fatface title-close">
+								<span class="title-close">Alex Quinlan</span>
+							</h4>
+						</div>
+						<div class="col-6 text-right">
+							<button type="button" class="close" aria-label="Close">
+								<span aria-hidden="true" style="color:white;">&times;</span>
+							</button>
+						</div>
+					</div>
+					<div class="pb-4 content-width mx-auto">
+						<div class="row">
+
+							<!-- Content Here -->
+
+							<form id="contactForm" class="col-12">
+								<div class="form-row">
+									<div class="form-group col-12">
+										<label for="contactEmail">Email</label>
+										<input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Where can I respond?">
+									</div>
+									<div class="form-group col-12">
+										<label for="contactName">Name</label>
+										<input type="text" class="form-control" id="contactName" name="contactName" placeholder="What should I call you?">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-12">
+										<label for="contactContent">Message</label>
+										<textarea class="form-control" id="contactContent" rows="4" name="contactContent"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col"></div>
+									<div class="col-auto"><button id="contactFormSubmit" class="btn btn-outline-light">Submit</button></div>
+									<div class="col"></div>
+								</div>
+							</form>
+
+							<!--<div class="col-12 col-sm-2 page-content-hgt page-content-side">
+								<div class="row">
+									<div class="col-2 col-sm-12">item1</div>
+									<div class="col-2 col-sm-12">item2</div>
+									<div class="col-2 col-sm-12">item3</div>
+								</div>
 							</div>
+							<hr class="d-block d-sm-none" style="margin: 8px 15px; background-color: white; width: 100%;"/>
+							<div class="col-12 col-sm-10 page-content-hgt">
+								content here
+							</div>-->
+						</div>
+						<div class="row m-4">
+						    <div class="col"><hr style="background-color: white;width:75%;"></div>
+						    <div class="col-auto">OR</div>
+						    <div class="col"><hr style="background-color: white;width:75%;"></div>
+						</div>
+						<div class="row m-4">
+							<div class="col"></div>
+							<div class="col-auto">
+								<form method="get" action="assets/images/aqresume.pdf">
+									<button type="submit" id="resumeDownload" class="btn btn-outline-light">Download My Resume</button>
+								</form>
+							</div>
+							<div class="col"></div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+			<div class="h-100" style="display:none;background-color: blue;">
+				
+			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-		    $(document).ready(function(){
 
-		    	var scrollLoc = $('#resumeMainLink').position().top;
-
-		    	$(window).resize(function() {
-				    $('#mainContainer').height($(window).height());
-				    scrollLoc = $('#resumeMainLink').position().top;
-				});	
-
-
-		        $(window).scroll(function(){
-		            if ($(this).scrollTop() > scrollLoc) {
-		                $('#navbar, #topContainer').fadeIn(500);
-		                return false;
-		            } else {
-		                $('#navbar, #topContainer').fadeOut(500);
-		                $('#navCollapse').collapse('hide');
-		                return false;
-		            }
-		        });
-
-		        $(".work").click(function() {
-				    $('html, body').animate({
-				        scrollTop: $("#introContainer").offset().top
-				    }, 1500);
-		            $('#navCollapse').collapse('hide');
-				    return false;
-				});
-
-				$('#topText, #navBrand').click(function() {
-				    $('html, body').animate({
-				        scrollTop: $("#mainContainer").offset().top
-				    }, 1000);
-				    return false;
-				});
-
-				//var vidHeight = $('#introContainer').css('height');
-				//$('#introVid').height($('#introContainer').height() - 100);
-
-		    });
-		</script>
+		<!-- Dependencies for Bootstrap4 -->
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- jquery ui -->
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+		<!-- custom js -->
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

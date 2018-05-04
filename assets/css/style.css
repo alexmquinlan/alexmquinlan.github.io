@@ -1,260 +1,134 @@
-#body {
-}
+@font-face { font-family: Big John; src: url('../fonts/BIG_JOHN.otf'); }
+@font-face { font-family: Slim Joe; src: url('../fonts/Slim_Joe.otf'); }
+@font-face { font-family: League Mono; src: url('../fonts/LeagueMono-Regular.otf'); }
 
-/* index.html */
-
-#allContent {
-	/*height: 2000px;*/
-}
-
-#mainContainer {
-	width: 100%;
-	height: 100vh;
-	background-color: lightslategrey;
-	background-image: url("../images/tcRocks.jpg");
-	background-attachment: fixed;
-	background-size: 130% 100%;
-	background-position: 50% 0;
-}
-
-#name {
-	font-size: 50px;
-}
-#title {
-	margin: 10px 0;
-	font-family: 'PT Sans', sans-serif;
-}
-
-#mainShade {
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.2);
-	display: table;
-}
-
-#contentContainer {
-	height: 200px;
-	width: 100%;
-	display: table-cell;
-	vertical-align: middle;
-}
-
-#content {
-	font-family: 'PT Sans', sans-serif;
-	text-align: center;
-	color: white;
-	width: 60%;
-	margin: 0 auto;
-}
-
-#links {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 25px;
-}
-
-.mainLink {
-	display: inline-block;
-	width: 150px;
-	margin: 0 auto;
-}
-
-.hr {
-	background-color: white;
-	width: 85%;
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-
-#introContainer {
-	width: 100%;
-	height: 400px;
-	max-height: 400px;
-	background-color: white;
+html, body {
+	background-color: #f9f9f9;
 	color: black;
-	display: table;
-	border-top: 3px solid;
-	border-bottom: 3px solid;
-	border-color: black;
-	overflow: hidden;
+	height: 100%;
 }
 
-#introTextContainer {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
+.big-john {	font-family: Big John; }
+.slim-joe {	font-family: Slim Joe; }
+.league-mono { font-family: League Mono; }
+.abril-fatface { font-family: 'Abril Fatface'; }
+.open-sans { font-family: 'Open Sans'; font-weight: 300;}
+.work-sans { font-family: 'Work Sans'; }
 
-#introText {
-	margin-top: 0;
-}
 
-#introVid {
+.hidden-page {
+	height: 100%;
 	position: relative;
-	height: auto;
-	width: 100%;
-	background-image: transparent url("../images/tcRocks.jpg") no-repeat;
-	background-size: cover;
-}
-
-video {
-	object-fit: fill;
-}
-
-#topContainer {
-	position: fixed;
-	bottom: 20px;
-	right: 25px;
-	display: none;
-}
-#topText {
-	color: gray;
-}
-
-
-/* fun.html */
-
-#navbar {
-	background-color: lightslategrey;
-	color: white;	
-	position:fixed;
-	top:0px;
-	width:100%; 
-	height:51px;
-	z-index:9999;
-	display: none;
-	border: 0;
-}
-
-#navCollapse {
-	z-index:9999;
-	background-color: lightslategrey;
-}
-
-#navButton {
-	background-color: inherit;
-	color: white;
-	border: 0;
-}
-.icon-bar {
-	background-color: white!important;
-}
-
-#navBrand {
-	font-family: 'PT Sans', sans-serif;
+	z-index:5;
 	color: white;
 }
 
-.navbarLinks {
+.hp-top { top:-101%; }
+.hp-left { left:-101%; }
+.hp-right { right:-101%; }
+.hp-bottom { bottom:-101%; }
+
+#cover-container {
+	max-width: 42rem;
+	position: absolute;
+	top:0; bottom:0;
+	left:0; right:0;
+}
+
+.main-link {
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+#wrk-link {	color: #39aa56; }
+#abt-link { color: #663096; }
+#fun-link { color: #ff5722; }
+#cot-link { color: #1565c0; }
+
+.display-3 {
+	font-size: 3.5rem;
+}
+.display-4 {
+	font-size: 2.5rem;
+}
+.title-close { cursor: pointer; }
+.content-width { max-width: 50rem; }
+.page-content-hgt {	min-height: 2rem; }
+
+.form-control {
+	background-color: unset;
 	color: white;
-	font-family: 'Quicksand', sans-serif;	
+	box-shadow: none;
 }
-
-#funContent {
-	margin-top: 50px;
-	padding-top: 15px;
-	height: 1500px;
-}
-
-#sideNav {
-	float:left;
-	width: 15%;
-}
-
-.sideNavLinkContainers {
-	width: 100%;
-	text-align: center;
-	padding-top: 10px;
-}
-
-#funMain {
-	margin-left: 15%;
-	padding-left: 10%;
-	border-left: 1px solid;
-	border-left-color: black;
-}
-
-.funTitles {
-	margin-top: 0;
-}
-
-.photoContainer {
-}
-
-.funPictures {
-	display: inline-block;
-	height: 80px;
-	width: 150px;
-	margin: 10px 10px;
-}
-
-
-/* Media Queries */
-
-@media (min-width: 768px) {
-	#name {
-		font-size:75px;
-	}
-	#mainContainer {
-		background-size: 100% 100%;
-	}
-	#content {
-		width: 90%;
-	}
-	#links {
-		font-size: 40px;
-	}
-	.mainLink {
-		margin: 0 35px 0 0;
-	}
-}
-
-
-/* Link Styling */
-.mainLink:link{
-  text-decoration: none;
-  color: inherit;
-}
-.mainLink:visited {
-  color: inherit;
-}
-.mainLink:hover{
-	text-decoration: none;
-	color: rgba(255,255,255,0.75);
-}
-.mainLink:active{
-	color: inherit;
-}
-
-.navbar-default .navbar-nav > li > a {
+.form-control::placeholder {
 	color: white;
-	font-size: 15px;
+	opacity: 0.5;
 }
-.navbarLinks:link{
-  text-decoration: none;
-  color: white;
-}
-.navbarLinks:visited {
-  color: white;
-}
-.navbarLinks:hover{
-	text-decoration: none;
-	color: rgba(255,255,255,0.75);
-}
-.navbarLinks:active{
+.form-control:focus {
+	background-color: unset;
 	color: white;
+	box-shadow: none;
 }
 
-.sideNavLinks:link{
-  text-decoration: none;
-  color: inherit;
+
+/* Responsive Font - Media Queries */
+  @media(min-width: 576px) {
+
+  .page-content-side { border-right: .5px solid white; border-bottom: 0; }
+  .page-content-hgt { min-height: 25rem; }
+
+} @media (min-width: 768px) {
+	.display-3 {
+		font-size: 5.5rem;
+	}
+	.display-4 {
+		font-size: 3.5rem;
+	}
+} @media (min-width: 992px) {
+
+
+
+} @media (min-width: 1200px) {
+
+
+
 }
-.sideNavLinks:visited {
-  color: inherit;
+
+/*
+.form-control::-webkit-input-placeholder {
+    color: white;
 }
-.sideNavLinks:hover{
-	text-decoration: none;
-	color: rgba(229,0,0,0.9);
+.form-control:-moz-placeholder {
+    /* FF 4-18 
+    color: white;
 }
-.sideNavLinks:active{
-	color: inherit;
+.form-control::-moz-placeholder {
+    /* FF 19+ 
+    color: white;
+}
+.form-control:-ms-input-placeholder {
+    /* IE 10+ 
+    color: white;
+}*/
+
+.corner-ribbon{
+  width: 200px;
+  background: #e82;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
