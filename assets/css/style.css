@@ -2,10 +2,15 @@
 @font-face { font-family: Slim Joe; src: url('../fonts/Slim_Joe.otf'); }
 @font-face { font-family: League Mono; src: url('../fonts/LeagueMono-Regular.otf'); }
 
+<<<<<<< HEAD
 html, body {
 	background-color: #f9f9f9;
 	color: black;
 	height: 100%;
+=======
+#allContent {
+	height: 2000px;
+>>>>>>> parent of 27eed45... update style.css
 }
 
 .big-john {	font-family: Big John; }
