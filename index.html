@@ -8,8 +8,9 @@
 		<link rel="icon" type="image/png" href="assets/images/rock.png"/>
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Julius+Sans+One|Poppins" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400|Work+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="assets/css/style.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -21,17 +22,17 @@
 					<h1 class="display-3 mb-0 josefin-sans">Alex Quinlan</h1>
 					<h2 class="display-4 open-sans" style="color: #888;">Software Engineer</h2>
 					<div class="mt-2 row">
-						<!-- <div class="col-12 col-md-3 main-link" id="wrk-link" name="left">Work</div>
-						<div class="col-12 col-md-3 main-link" id="abt-link" name="top">About</div>
+						<div class="col-12 col-md-6 main-link" id="wrk-link" name="left">Work</div>
+						<!--<div class="col-12 col-md-4 main-link" id="abt-link" name="top">About</div>
 						<div class="col-12 col-md-3 main-link" id="fun-link" name="right">Fun</div> -->
-						<div class="col-12 col-md-12 main-link" id="cot-link" name="bottom">Contact</div>
+						<div class="col-12 col-md-6 main-link" id="cot-link" name="bottom">Contact</div>
 					</div>
 				</main>
 				<footer class="mastfoot mt-auto"></footer>
 			</div>
 			<div class="hidden-page hp-top">
 				<div class="container h-100">
-					<div class="pt-4 pb-5 row">
+					<div class="pt-4 pb-2 row">
 						<div class="col-6 text-left">
 							<h4 class="josefin-sans title-close">
 								<span class="title-close">Alex Quinlan</span>
@@ -43,78 +44,113 @@
 							</button>
 						</div>
 					</div>
-					<div class="pb-4 content-width mx-auto">
-						<div class="row">
+					<div class="pb-4 row overflow-y-auto" style="max-height: calc(100% - 69px);">
+						
+						<!-- Handlebars template here -->
+						<div id="handlebarsTemplate" class="col-12"></div>
 
-							<!-- Content Here -->
-							<form id="contactForm" class="col-12" method="POST" action="https://formspree.io/alexquinlan1@gmail.com">
-								<div class="form-row">
-									<div class="form-group col-12">
-										<label for="contactEmail">Email</label>
-										<input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Where can I respond?">
-									</div>
-									<div class="form-group col-12">
-										<label for="contactName">Name</label>
-										<input type="text" class="form-control" id="contactName" name="contactName" placeholder="What should I call you?">
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col-12">
-										<label for="contactContent">Message</label>
-										<textarea class="form-control" id="contactContent" rows="4" name="contactContent"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col"></div>
-									<div class="col-auto"><button id="" class="btn btn-outline-light">Submit</button></div>
-									<div class="col"></div>
-								</div>
-								<input type="hidden" name="_next" value="http://alexquinlan.xyz" />
-							</form>
-
-							<!--<div class="col-12 col-sm-2 page-content-hgt page-content-side">
-								<div class="row">
-									<div class="col-2 col-sm-12">item1</div>
-									<div class="col-2 col-sm-12">item2</div>
-									<div class="col-2 col-sm-12">item3</div>
-								</div>
-							</div>
-							<hr class="d-block d-sm-none" style="margin: 8px 15px; background-color: white; width: 100%;"/>
-							<div class="col-12 col-sm-10 page-content-hgt">
-								content here
-							</div>-->
-						</div>
-						<div class="row m-4">
-						    <div class="col"><hr style="background-color: white;width:75%;"></div>
-						    <div class="col-auto">OR</div>
-						    <div class="col"><hr style="background-color: white;width:75%;"></div>
-						</div>
-						<div class="row m-4">
-							<div class="col"></div>
-							<div class="col-auto">
-								<form method="get" action="assets/images/aqresume.pdf">
-									<button type="submit" id="resumeDownload" class="btn btn-outline-light">Download My Resume</button>
-								</form>
-							</div>
-							<div class="col"></div>
-						</div>
+						
 					</div>
 				</div>
-			</div>
-			
-			<div class="h-100" style="display:none;background-color: blue;">
-				
 			</div>
 		</div>
 
 		<!-- Dependencies for Bootstrap4 -->
-		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<!-- jquery ui -->
-		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		<!-- handlebars js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+		<!-- Charts js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 		<!-- custom js -->
 		<script src="assets/js/main.js"></script>
 	</body>
+
+
+	<!-- Handlebars Templates -->
+
+	<script id="work-template" type="text/x-handlebars-template">
+		<div class="mx-auto" style="max-width: 60rem;">
+			<div class="row">
+				<div class="col-12"><h1 class="display-4 border-bottom border-white">Professional</h3></div>
+				<div class="col-12 my-1">
+					<img class="p-1" src="assets/images/cnsi_logo.png" style="height:44px;width:180px;background:white;"/>
+				</div>
+				<div class="col-12 my-1">
+					<h5 class="lead m-0 pt-2">CNSI | Lansing, MI | July 2016 - Present</h5>
+					I am currently employeed as a Software Engineer at <a class="white-links" href="https://www.cns-inc.com" target="_blank">CNSI</a> in Lansing, MI. CNSI is a leader in healthcare IT and the development of MMIS platforms for states around the nation. I have been a part of several different teams in my time at CNSI, working on all aspects of the development process. I have worked extensively using Java & Spring, as well as studying and creating POCs with Node.js, Angular 6, and Spring Boot.
+				</div>
+				<div class="col-12 col-md-8 offset-md-2 my-3 text-center">
+					<canvas id="skillsChart" style="background-color:white;" width="400" height="150"></canvas>
+				</div>
+				<div class="col-12"><h1 class="display-4 border-bottom border-white">Personal</h3></div>
+				<div class="col-12 my-1">
+					<h5 class="lead m-0 pt-2">AlbumJourney</h5>
+					My most recent personal project is something I named AlbumJourney. In 2017 I decided to listen through Rolling Stone Magazine's <a href="https://www.rollingstone.com/music/music-lists/500-greatest-albums-of-all-time-156826/" target="_blank" class="white-links">Top 500 Greatest Albums of All Time</a>. I quickly became frustrated with the UI on the Rolling Stone website, as it was slow to load each new album. I was tracking my progress as well as my ratings for each album in a notebook but decided that a web app would be an easier way to keep track. </div>
+					<div class="col-12 my-1">
+					The backend is implemented using Python Flask while the frontend work is handled with JQuery & Handlebars.js. Data is stored in a MySql database and hosted with Amazon Elastic Beanstalk. I scraped the album data from <a class="white-links" target="_blank" href="https://www.discogs.com/lists/500Greatest-Albums-Rolling-Stone/140759">Discogs</a>, track data from <a class="white-links" target="_blank" href="https://musicbrainz.org/series/8668518f-4a1e-4802-8b0d-81703ced6418">MusicBrainz</a>, and downloaded album covers using <a class="white-links" target="_blank" href="https://pypi.org/project/sacad/">sacad</a>.
+				</div>
+				<div class="col-12 my-1 text-center pb-3">
+					<a target="_blank" href="http://flask-env.df8ckdhemc.us-east-2.elasticbeanstalk.com/"><img class="p-1" src="assets/images/albumJourney_splash.png" style="height:155px;width:300px;"/></a>
+					<a target="_blank" href="http://flask-env.df8ckdhemc.us-east-2.elasticbeanstalk.com/albums"><img class="p-1" src="assets/images/albumJourney_album.png" style="height:155px;width:300px;"/></a>
+				</div>
+			</div>
+		</div>
+	</script>
+	<script id="about-template" type="text/x-handlebars-template">
+		<div class="mx-auto" style="max-width: 60rem;">
+			<div class="row">
+				<div class="col-12">About Page</div>
+			</div>
+		</div>
+	</script>
+	<script id="fun-template" type="text/x-handlebars-template"></script>
+
+	<script id="contact-template" type="text/x-handlebars-template">
+		<div class="content-width mx-auto">
+		<div class="row">
+			<form id="contactForm" class="col-12" method="POST" action="https://formspree.io/alexquinlan1@gmail.com">
+				<div class="form-row">
+					<div class="form-group col-12">
+						<label for="contactEmail">Email</label>
+						<input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Where can I respond?">
+					</div>
+					<div class="form-group col-12">
+						<label for="contactName">Name</label>
+						<input type="text" class="form-control" id="contactName" name="contactName" placeholder="What should I call you?">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-12">
+						<label for="contactContent">Message</label>
+						<textarea class="form-control" id="contactContent" rows="4" name="contactContent"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col"></div>
+					<div class="col-auto"><button id="" class="btn btn-outline-light"><i class="far fa-envelope"></i> Submit</button></div>
+					<div class="col"></div>
+				</div>
+				<input type="hidden" name="_next" value="http://alexquinlan.xyz" />
+			</form>
+		</div>
+		<div class="row m-3">
+		    <div class="col"><hr style="background-color: white;width:75%;"></div>
+		    <div class="col-auto">OR</div>
+		    <div class="col"><hr style="background-color: white;width:75%;"></div>
+		</div>
+		<div class="row m-3">
+			<div class="col"></div>
+			<div class="col-auto">
+				<form method="get" action="assets/images/aqresume.pdf">
+					<button type="submit" id="resumeDownload" class="btn btn-outline-light"><i class="fas fa-download"></i> Download My Resume</button>
+				</form>
+			</div>
+			<div class="col"></div>
+		</div>
+		</div>
+	</script>
 </html>

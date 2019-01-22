@@ -21,6 +21,15 @@ html, body {
 .poppins {font-family: 'Poppins', sans-serif;}
 .julius-sans-one {font-family: 'Julius Sans One', sans-serif;}
 
+.overflow-auto {
+	overflow: auto;
+}
+.overflow-x-auto {
+	overflow-x: auto;
+}
+.overflow-y-auto {
+	overflow-y: auto;
+}
 
 .hidden-page {
 	height: 100%;
@@ -98,6 +107,15 @@ html, body {
 
 
 
+}
+
+.white-links:link, .white-links:visited {
+	color: white;
+	text-decoration: underline;
+}
+.white-links:hover, .white-links:active {
+	color: lightgray;
+	text-decoration: underline;
 }
 
 /*
