@@ -1,5 +1,3 @@
-var chartCreated = false;
-
 $(document).ready(function() {
 
 	var direction = 'top',
@@ -18,7 +16,7 @@ $(document).ready(function() {
 
 		$("#handlebarsTemplate").html(template);
 
-		if (!chartCreated && page === "work")
+		if (page === "work")
 			createSkillsChart();
 
 		var newDir = $(this).attr('name');
@@ -83,7 +81,6 @@ $(document).ready(function() {
 
 
 function createSkillsChart() {
-	chartCreated = true;
 	var ctx = $("#skillsChart")[0];
 	var myChart = new Chart(ctx, {
 	    type: 'bar',
